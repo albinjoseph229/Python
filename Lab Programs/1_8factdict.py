@@ -16,5 +16,6 @@ def factorial(n):
 
     return _factorial(n)
 
-print(factorial(5))  
-print(factorial(10)) 
+
+print("factorial is:",factorial(5))  
+print("factorial is:",factorial(10)) 
