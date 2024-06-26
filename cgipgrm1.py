@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!C:\Users\cclab57\AppData\Local\Programs\Python\Python312\python.exe
 # Importing the 'cgi' module
 import cgi
 
