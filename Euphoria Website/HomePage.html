@@ -9,16 +9,30 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column; /* Change from center alignment to column layout */
-            align-items: center;
-            justify-content: flex-start; /* Adjust content alignment */
+            align-items: flex-start; /* Align items to the left */
+            justify-content: flex-start; /* Adjust content alignment to start at the top */
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            /* Add background image */
+            background-image: url('background.jpg');
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* No repeating of the background image */
             padding-top: 50px; /* Add some padding at the top */
         }
-        .container, .about {
-            text-align: center;
-            margin-bottom: 20px; /* Add some space between sections */
+        .about {
+            text-align: left; /* Align text to the left */
+            margin: 20px; /* Add some space around the section */
+            color: white; /* Set text color to white */
+            max-width: 600px; /* Limit the width of the section */
+            padding: 20px; /* Add padding inside the section */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
+            border-radius: 10px; /* Rounded corners for section */
+        }
+        .container {
+            text-align: center; /* Center align content in container */
+            margin: 20px; /* Add some space around the section */
         }
         .btn {
             display: inline-block;
@@ -37,8 +51,6 @@
             background-color: #0056b3;
         }
         .about p {
-            max-width: 600px; /* Limit the width of the paragraph */
-            margin: auto; /* Center the paragraph */
             line-height: 1.6; /* Improve readability */
         }
     </style>
@@ -50,9 +62,8 @@
         <p>
             Euphoria, the annual tech fest, brings together the brightest minds from across the globe to compete, share, and innovate in the fields of science and technology. It's a celebration of creativity and ingenuity, featuring workshops, competitions, and keynote speeches from leading industry experts. Join us to explore the latest in technology and to be inspired by the endless possibilities of the future.
         </p>
-    </div>
-    <div class="container">
-        <a href="https://script.google.com/a/macros/rajagiri.edu/s/AKfycbwYwdRxehyaIvfZRXdqammbvwXom0f6K1jdLrFa0yEnVsZbmZ6D0gI_3J9yQD3h2qOvmw/exec" class="btn">Register</a>
+    
+        <a href="https://script.google.com/a/macros/rajagiri.edu/s/AKfycby_1yH-pKLwHFgkEtM9U__HG-JGlV-kYHZuaDgRQq7g4Nl13tn5-nxxOuQRrUOyHezlPw/exec" class="btn">Register</a>
     </div>
 </body>
 </html>

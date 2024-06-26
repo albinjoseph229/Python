@@ -1,0 +1,46 @@
+<form id="registrationForm" onsubmit="submitForm(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+    
+    <label for="place">Place:</label>
+    <input type="text" id="place" name="place" required><br><br>
+    
+    <label for="college">College:</label>
+    <input type="text" id="college" name="college" required><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+function submitForm(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Collect form data
+    var formData = {
+        'name': document.getElementById('name').value,
+        'age': document.getElementById('age').value,
+        'place': document.getElementById('place').value,
+        'college': document.getElementById('college').value
+    };
+    
+    // Send data to Google Apps Script web app
+    fetch('https://script.google.com/macros/s/AKfycbxv7kq20GA1pXRTCs4NhOlyIGvYKvQ0nzsuPLdcUFeWcZ6dMO6RbCkXcZZXqYYKrA9X3w/exec', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Data inserted successfully!');
+        // Optionally clear the form fields after successful submission
+        document.getElementById('registrationForm').reset();
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Error inserting data.');
+    });
+}
