@@ -36,7 +36,7 @@ print("Content-type: text/html\n\n")
 
 # Start HTML document
 print("<html><body style='text-align:center;'>")
-print("<h1 style='color: green;'>Albin's Website</h1>")
+print("<h1 style='color: green;'>CGI Website</h1>")
 
 # Parse form data
 form = cgi.FieldStorage()
