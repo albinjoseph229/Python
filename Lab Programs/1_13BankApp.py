@@ -46,12 +46,12 @@ class CheckingAccount(BankAccount):
             print("Invalid withdraw amount or exceeds overdraft limit.")
 
 
-savings = SavingsAccount("SA123", "Alice", 5.0)
+savings = SavingsAccount("A100", "Albin", 5.0)
 savings.deposit(1000)
 savings.check_balance()
 savings.add_interest()
 
-checking = CheckingAccount("CA123", "Bob", 500)
+checking = CheckingAccount("A200", "Joseph", 500)
 checking.deposit(500)
 checking.check_balance()
 checking.withdraw(800)
