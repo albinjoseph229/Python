@@ -9,4 +9,4 @@ elif(y==2):
 else:
     x=x+(x*0.1)
 
-print("Your investment will become:",x,"RS")
+print("Your investment will become:",x,"RS" if x>0 else "Invalid input")
