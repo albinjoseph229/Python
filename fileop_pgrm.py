@@ -1,3 +1,4 @@
+
 import os
 f=open("myfile.txt","r")
 #f.write("hello world!")
