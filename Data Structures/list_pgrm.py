@@ -11,6 +11,3 @@ list3 = ["apple", "banana", "cherry"]
 list4 = [1, 5, 7, 9, 3]
 list5 = [True, False, False]
 
-print(list3)
-print(list4)
-print(list5)
